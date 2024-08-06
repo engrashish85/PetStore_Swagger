@@ -1,24 +1,27 @@
-package payload.pojo.addPet;
+package payload.pojo.response.addPet.response.addPet;
 
-public class AddPetRequest {
-    private int id;
-    private Category category;
+import payload.pojo.request.addPet.Category;
+import payload.pojo.request.addPet.Tags;
+
+public class AddPetResponse {
+    private long id;
+    private payload.pojo.request.addPet.Category category;
     private String name;
     private String[] photoUrls;
-    private Tags[] tags;
+    private payload.pojo.request.addPet.Tags[] tags;
     private String status;
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
 
-    public Category getCategory() {
+    public payload.pojo.request.addPet.Category getCategory() {
         return category;
     }
 
@@ -34,7 +37,7 @@ public class AddPetRequest {
         this.name = name;
     }
 
-    public Tags[] getTags() {
+    public payload.pojo.request.addPet.Tags[] getTags() {
         return tags;
     }
 

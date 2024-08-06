@@ -1,4 +1,4 @@
-package payload.pojo.addPet;
+package payload.pojo.request.addPet;
 
 public class Category {
     private int id;

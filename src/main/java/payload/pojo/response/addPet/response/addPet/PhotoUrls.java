@@ -1,4 +1,4 @@
-package payload.pojo.addPet;
+package payload.pojo.response.addPet.response.addPet;
 
 public class PhotoUrls {
     private String string;
