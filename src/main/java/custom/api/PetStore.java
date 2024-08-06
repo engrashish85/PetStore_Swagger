@@ -9,7 +9,6 @@ import payload.pojo.request.addPet.AddPetRequest;
 import payload.pojo.request.addPet.Category;
 import payload.pojo.request.addPet.Tags;
 import payload.pojo.response.addPet.response.addPet.AddPetResponse;
-import payload.pojo.response.addPet.response.getPet.GetPetResponse;
 import util.api.RestAssuredFunctions;
 import util.files.Globals;
 
@@ -135,7 +134,6 @@ public class PetStore {
                 Map<Object, Object> map = new Gson().fromJson(responseText, Map.class);
                 System.out.println("Map having id - "+ dataMap.get("id") + "is - "+map.get("name"));
             }
-
         } else {
             Map<String, String> json = new Gson().fromJson(responseText, Map.class);
             Assert.assertEquals("Pet not found", "Pet not found", json.get("message"));
